@@ -1,6 +1,6 @@
 # Laravel POS Foundations
 
-A Laravel application demonstrating routes, controllers, Blade views, and static PHP arrays.
+A Laravel POS application demonstrating routes, controllers, Blade views, migrations, seeders, Eloquent models, and database records.
 
 ## Features
 
@@ -8,8 +8,9 @@ A Laravel application demonstrating routes, controllers, Blade views, and static
 - About page
 - Customer Accounts page
 - User Accounts page
-- User Accounts page
-- Static customer and user records
+- Customer and user database tables
+- Sample records created through a seeder
+- Eloquent database retrieval
 
 ## Routes
 
