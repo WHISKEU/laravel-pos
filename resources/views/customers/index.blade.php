@@ -18,9 +18,10 @@
     <ul>
         @foreach ($customers as $customer)
             <li>
-                {{ $customer['id'] }} -
-                {{ $customer['name'] }} -
-                {{ $customer['email'] }}
+                {{ $customer->id }} -
+                {{ $customer->full_name }} -
+                {{ $customer->email }} -
+                {{ $customer->phone }}
             </li>
         @endforeach
     </ul>

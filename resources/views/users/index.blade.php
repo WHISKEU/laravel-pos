@@ -18,9 +18,9 @@
     <ul>
         @foreach ($users as $user)
             <li>
-                {{ $user['id'] }} -
-                {{ $user['name'] }} -
-                {{ $user['role'] }}
+                {{ $user->id }} -
+                {{ $user->username }} -
+                {{ $user->full_name }}
             </li>
         @endforeach
     </ul>

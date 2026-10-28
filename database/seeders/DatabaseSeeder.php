@@ -2,24 +2,67 @@
 
 namespace Database\Seeders;
 
+use App\Models\Customer;
 use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    use WithoutModelEvents;
-
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
-        // User::factory(10)->create();
+        Customer::create([
+            'full_name' => 'Juan Dela Cruz',
+            'email' => 'juan@example.com',
+            'phone' => '09171234567',
+        ]);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        Customer::create([
+            'full_name' => 'Maria Santos',
+            'email' => 'maria@example.com',
+            'phone' => '09181234567',
+        ]);
+
+        Customer::create([
+            'full_name' => 'Pedro Reyes',
+            'email' => 'pedro@example.com',
+            'phone' => '09191234567',
+        ]);
+
+        Customer::create([
+            'full_name' => 'Ana Garcia',
+            'email' => 'ana@example.com',
+            'phone' => '09201234567',
+        ]);
+
+        Customer::create([
+            'full_name' => 'Luis Mendoza',
+            'email' => 'luis@example.com',
+            'phone' => '09211234567',
+        ]);
+
+        User::create([
+            'username' => 'admin',
+            'full_name' => 'Admin User',
+        ]);
+
+        User::create([
+            'username' => 'cashier1',
+            'full_name' => 'Cashier One',
+        ]);
+
+        User::create([
+            'username' => 'cashier2',
+            'full_name' => 'Cashier Two',
+        ]);
+
+        User::create([
+            'username' => 'manager',
+            'full_name' => 'Manager User',
+        ]);
+
+        User::create([
+            'username' => 'staff',
+            'full_name' => 'Staff User',
         ]);
     }
 }
